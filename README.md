@@ -1,6 +1,6 @@
 # Feira Livre
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto React aplicando o uso de Styled Components, Storybook e Jest
 
 ## Available Scripts
 
