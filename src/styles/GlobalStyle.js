@@ -3,9 +3,6 @@ import { createGlobalStyle } from 'styled-components'
 import { BreakpointSizes, breakAt } from "./Breakpoints"
 import { Helmet } from 'react-helmet';
 
-
-const colorYellow = `#ffc107`;
-
 const GlobalStyle = createGlobalStyle`
   
   html {
@@ -82,7 +79,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-   strong {   color: ${colorYellow};   }
+   strong {   color: ${props => props.theme.colors.primary.main};   }
 `;
 
 const GlobalStyleComposed = () => (

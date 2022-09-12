@@ -1,5 +1,6 @@
 import GlobalStyle from "styles/GlobalStyle";
-import ThemeProvider from "../src/styles/ThemeProvider";
+import ThemeProvider, { ThemeNames } from "../src/styles/ThemeProvider";
+import { select } from "@storybook/addon-knobs"
 
 const viewports = {
   extraSmall: {
@@ -61,8 +62,8 @@ export const parameters = {
 export const decorators = [
   (Story => (
     <>
-      <GlobalStyle />
-      <ThemeProvider>
+      <ThemeProvider theme={select("Theme", ThemeNames, ThemeNames.light)}>
+        <GlobalStyle />
         <Story />
       </ThemeProvider>
     </>

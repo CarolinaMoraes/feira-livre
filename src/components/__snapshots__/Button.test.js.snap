@@ -70,9 +70,9 @@ exports[`renders with color primary 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #ffc107;
-  border: 2px solid #ffc107;
-  color: #212121;
+  background-color: #2196f3;
+  border: 2px solid #2196f3;
+  color: #fff;
 }
 
 .c0:disabled {
@@ -81,8 +81,8 @@ exports[`renders with color primary 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #c79100;
-  border-color: #c79100;
+  background-color: #1769aa;
+  border-color: #1769aa;
 }
 
 <button
@@ -101,9 +101,9 @@ exports[`renders with color primary and variant link 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #ffc107;
-  border: 2px solid #ffc107;
-  color: #212121;
+  background-color: #2196f3;
+  border: 2px solid #2196f3;
+  color: #fff;
 }
 
 .c0:disabled {
@@ -112,14 +112,14 @@ exports[`renders with color primary and variant link 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #c79100;
-  border-color: #c79100;
+  background-color: #1769aa;
+  border-color: #1769aa;
 }
 
 .c1 {
   background-color: transparent;
   border-color: transparent;
-  color: #ffc107;
+  color: #2196f3;
   padding-left: 0;
   padding-right: 0;
 }
@@ -127,7 +127,7 @@ exports[`renders with color primary and variant link 1`] = `
 .c1:hover:enabled {
   background-color: transparent;
   border-color: transparent;
-  color: #c79100;
+  color: #1769aa;
 }
 
 <button
@@ -146,9 +146,9 @@ exports[`renders with color primary and variant outlined 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #ffc107;
-  border: 2px solid #ffc107;
-  color: #212121;
+  background-color: #2196f3;
+  border: 2px solid #2196f3;
+  color: #fff;
 }
 
 .c0:disabled {
@@ -157,18 +157,18 @@ exports[`renders with color primary and variant outlined 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #c79100;
-  border-color: #c79100;
+  background-color: #1769aa;
+  border-color: #1769aa;
 }
 
 .c1 {
   background-color: transparent;
-  color: #ffc107;
+  color: #2196f3;
 }
 
 .c1:hover:enabled {
   background-color: transparent;
-  color: #c79100;
+  color: #1769aa;
 }
 
 <button
