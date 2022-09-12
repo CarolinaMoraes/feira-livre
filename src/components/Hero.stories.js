@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import BgFruits from "../stories/assets/hero-image.jpg";
 import BgSeller from "../stories/assets/hero-image-2.jpg"
 
+import Button from './Button';
 import Heading from './Heading';
 
 export default {
@@ -30,5 +31,6 @@ export const withList = () => (
       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
     </ul>
-  </Hero >
+    <Button color='primary' variant='outlined'>Matricule-se agora</Button>
+  </Hero>
 );
