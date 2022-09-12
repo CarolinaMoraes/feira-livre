@@ -1,4 +1,5 @@
 import GlobalStyle from "styles/GlobalStyle";
+import ThemeProvider from "../src/styles/ThemeProvider";
 
 const viewports = {
   extraSmall: {
@@ -61,7 +62,9 @@ export const decorators = [
   (Story => (
     <>
       <GlobalStyle />
-      <Story />
+      <ThemeProvider>
+        <Story />
+      </ThemeProvider>
     </>
   ))
 ];
