@@ -1,15 +1,15 @@
 import React from 'react'
 import { text } from "@storybook/addon-knobs"
 
+import BgFruits from "stories/assets/hero-image.jpg";
+import BgSeller from "stories/assets/hero-image-2.jpg"
+
+import Button from 'components/atoms/Button';
+import Heading from 'components/atoms/Heading';
+
 import Hero from "./Hero";
-import BgFruits from "../stories/assets/hero-image.jpg";
-import BgSeller from "../stories/assets/hero-image-2.jpg"
-
-import Button from './Button';
-import Heading from './Heading';
-
 export default {
-  title: "Components/Hero",
+  title: "Components/Molecules/Hero",
   component: Hero
 };
 
