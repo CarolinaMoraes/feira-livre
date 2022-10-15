@@ -70,8 +70,8 @@ exports[`renders with color primary 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #2196f3;
-  border: 2px solid #2196f3;
+  background-color: #5bcc23;
+  border: 2px solid #5bcc23;
   color: #fff;
 }
 
@@ -81,8 +81,8 @@ exports[`renders with color primary 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #1769aa;
-  border-color: #1769aa;
+  background-color: #2ca352;
+  border-color: #2ca352;
 }
 
 <button
@@ -101,8 +101,8 @@ exports[`renders with color primary and variant link 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #2196f3;
-  border: 2px solid #2196f3;
+  background-color: #5bcc23;
+  border: 2px solid #5bcc23;
   color: #fff;
 }
 
@@ -112,14 +112,14 @@ exports[`renders with color primary and variant link 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #1769aa;
-  border-color: #1769aa;
+  background-color: #2ca352;
+  border-color: #2ca352;
 }
 
 .c1 {
   background-color: transparent;
   border-color: transparent;
-  color: #2196f3;
+  color: #5bcc23;
   padding-left: 0;
   padding-right: 0;
 }
@@ -127,7 +127,7 @@ exports[`renders with color primary and variant link 1`] = `
 .c1:hover:enabled {
   background-color: transparent;
   border-color: transparent;
-  color: #1769aa;
+  color: #2ca352;
 }
 
 <button
@@ -146,8 +146,8 @@ exports[`renders with color primary and variant outlined 1`] = `
   text-transform: uppercase;
   padding: 12px 36px;
   cursor: pointer;
-  background-color: #2196f3;
-  border: 2px solid #2196f3;
+  background-color: #5bcc23;
+  border: 2px solid #5bcc23;
   color: #fff;
 }
 
@@ -157,18 +157,18 @@ exports[`renders with color primary and variant outlined 1`] = `
 }
 
 .c0:hover:enabled {
-  background-color: #1769aa;
-  border-color: #1769aa;
+  background-color: #2ca352;
+  border-color: #2ca352;
 }
 
 .c1 {
   background-color: transparent;
-  color: #2196f3;
+  color: #5bcc23;
 }
 
 .c1:hover:enabled {
   background-color: transparent;
-  color: #1769aa;
+  color: #2ca352;
 }
 
 <button
