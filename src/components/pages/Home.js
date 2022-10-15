@@ -8,9 +8,11 @@ import Grid from "components/atoms/Grid";
 
 import { FaUtensils, FaSeedling, FaMedkit, FaHandshake } from "react-icons/fa";
 import BgSeller from "assets/hero-image-2.jpg";
+import AboutVideo from "assets/about-video.mp4";
 import Section from "components/molecules/Section";
+import Footer from "components/organisms/Footer";
 
-const Home = (props) => (
+const Home = () => (
   <>
     <Hero image={BgSeller} >
 
@@ -42,11 +44,36 @@ const Home = (props) => (
         </Feature>
       </Grid>
     </Section>
+    <Section inverse>
+      <Grid md={2}>
+        <div>
+          <Heading>
+            <h2>Conheça nossa proposta</h2>
+          </Heading>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, nulla? Adipisci voluptates veniam officiis earum tempore repudiandae aliquid est eligendi,
+            quibusdam, doloremque nobis dolore eveniet, magni numquam iure laboriosam voluptatibus.</p>
+          <div>
+            <Button color="primary">Saiba mais</Button>
+          </div>
+        </div>
+        <div>
+          <video src={AboutVideo} width="100%" height="100%" autoPlay loop muted />
+        </div>
+      </Grid>
+    </Section>
+    <Section>
+      <Heading>
+        <h2>Feira Livre</h2>
+      </Heading>
+    </Section>
+    <Section inverse>
+      <Heading>
+        <h2>Dúvidas recorrentes</h2>
+      </Heading>
+    </Section>
+
+    <Footer />
   </>
 );
-
-Home.defaultProps = {};
-
-Home.propTypes = {};
 
 export default Home;
