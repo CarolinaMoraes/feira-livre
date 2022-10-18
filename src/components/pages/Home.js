@@ -11,6 +11,23 @@ import BgSeller from "assets/hero-image-2.jpg";
 import AboutVideo from "assets/about-video.mp4";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
+import ProductGrid from "components/organisms/ProductGrid";
+
+import CozinhaSolidariaImage from "assets/cozinha-solidaria.jpg";
+import ArmazemDoCampoImage from "assets/armazem-campo.jpeg";
+import CooperativaImage from "assets/cooperativa.jpg";
+import ProdutorImage from "assets/produtor.jpg";
+import EducacaoImage from "assets/escola.jpg";
+import AssentamentoImage from "assets/assentamento.jpg";
+
+const products = [
+  { id: 1, title: "Cozinha solidária", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: CozinhaSolidariaImage },
+  { id: 2, title: "Armazém do Campo", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: ArmazemDoCampoImage },
+  { id: 3, title: "Cooperativas", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: CooperativaImage },
+  { id: 4, title: "Apoio ao pequeno produtor", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: ProdutorImage },
+  { id: 5, title: "Educação no campo", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: EducacaoImage },
+  { id: 6, title: "Assentamentos", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: AssentamentoImage }
+];
 
 const Home = () => (
   <>
@@ -48,7 +65,7 @@ const Home = () => (
       <Grid md={2}>
         <div>
           <Heading>
-            <h2>Conheça nossa proposta</h2>
+            <h2>Nossa missão</h2>
           </Heading>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, nulla? Adipisci voluptates veniam officiis earum tempore repudiandae aliquid est eligendi,
             quibusdam, doloremque nobis dolore eveniet, magni numquam iure laboriosam voluptatibus.</p>
@@ -63,8 +80,9 @@ const Home = () => (
     </Section>
     <Section>
       <Heading>
-        <h2>Feira Livre</h2>
+        <h2>Conheça mais sobre os projetos</h2>
       </Heading>
+      <ProductGrid products={products} />
     </Section>
     <Section inverse>
       <Heading>
