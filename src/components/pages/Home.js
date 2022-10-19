@@ -12,6 +12,7 @@ import AboutVideo from "assets/about-video.mp4";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
+import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 
 import CozinhaSolidariaImage from "assets/cozinha-solidaria.jpg";
 import ArmazemDoCampoImage from "assets/armazem-campo.jpeg";
@@ -88,6 +89,17 @@ const Home = () => (
       <Heading>
         <h2>Dúvidas recorrentes</h2>
       </Heading>
+      <AccordionGroup>
+        <Accordion title="Como realizo minha inscrição?">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quibusdam ea at sed magni ipsum, consequuntur, harum neque assumenda provident, eveniet molestiae deserunt quae similique modi aspernatur facilis dolor eius.
+        </Accordion>
+        <Accordion title="Como funciona o financiamento dos projetos?">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quibusdam ea at sed magni ipsum, consequuntur, harum neque assumenda provident, eveniet molestiae deserunt quae similique modi aspernatur facilis dolor eius.
+        </Accordion>
+        <Accordion title="Onde posso encontrar?">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quibusdam ea at sed magni ipsum, consequuntur, harum neque assumenda provident, eveniet molestiae deserunt quae similique modi aspernatur facilis dolor eius.
+        </Accordion>
+      </AccordionGroup>
     </Section>
 
     <Footer />
