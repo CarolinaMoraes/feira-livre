@@ -10,6 +10,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "add": "^2.0.6",
+    "chromatic": "^6.11.2",
     "jest-styled-components": "^7.1.1",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
@@ -27,7 +28,8 @@
     "cover": "npm test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=3512e656fa65"
   },
   "eslintConfig": {
     "extends": [
@@ -80,5 +82,7 @@
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
     "webpack": "^5.74.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "feira-livre@0.1.0"
 }
