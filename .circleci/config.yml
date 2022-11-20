@@ -20,6 +20,7 @@ workflows:
         # If you are using yarn, change the line below from "npm" to "yarn"
         pkg-manager: npm
         steps:
-          - checkout # Special step to checkout your source code
+          # Special step to checkout your source code
+          - checkout
           - run: node --version
           - run: npm --version
