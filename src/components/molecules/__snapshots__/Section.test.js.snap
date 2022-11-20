@@ -21,11 +21,16 @@ exports[`it renders correctly 1`] = `
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width:992px) {
   .c1 {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    padding: 80px 0;
   }
 }
 
