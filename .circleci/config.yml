@@ -2,7 +2,7 @@ version: "2.1"
 orbs:
   node: circleci/node@5.0.3
 jobs:
-  setup:
+  tests:
     docker:
       - image: "cimg/base:stable"
     steps:
@@ -10,7 +10,9 @@ jobs:
       - node/install:
           node-version: "18.12.1"
       - run: node --version
+      - node/install-packages
+      - run: npm run lint
 workflows:
   ci:
     jobs:
-      - setup
+      - tests
