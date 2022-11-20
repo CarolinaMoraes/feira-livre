@@ -1,6 +1,7 @@
 # Feira Livre
 
 ![CircleCI](https://img.shields.io/circleci/build/github/CarolinaMoraes/feira-livre)
+
 ![Codecov](https://img.shields.io/codecov/c/github/CarolinaMoraes/feira-livre)
 
 Projeto React aplicando o uso de Styled Components, Storybook e Jest.
