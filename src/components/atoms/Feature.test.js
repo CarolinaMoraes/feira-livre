@@ -1,17 +1,17 @@
 import React from "react";
-import { render } from "test-utils";
+import { render, screen } from "test-utils";
 
 import Feature from "./Feature";
 
 
 test('renders the title', () => {
-  const { getByText } = render(<Feature title="My title"></Feature>);
+  render(<Feature title="My title"></Feature>);
 
-  expect(getByText("My title")).toBeInTheDocument();
+  expect(screen.getByText("My title")).toBeInTheDocument();
 });
 
 test('renders the children', () => {
-  const { getByText } = render(<Feature>My children</Feature>);
+  render(<Feature>My children</Feature>);
 
-  expect(getByText("My children")).toBeInTheDocument();
+  expect(screen.getByText("My children")).toBeInTheDocument();
 });

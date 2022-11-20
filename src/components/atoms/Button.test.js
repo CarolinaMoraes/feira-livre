@@ -1,22 +1,22 @@
 import React from 'react'
 import Button, { ButtonColors, ButtonsVariants } from './Button';
-import { render, fireEvent } from "test-utils";
+import { render, fireEvent, screen } from "test-utils";
 
 test('renders a text', () => {
-  const { getByText } = render(
+  render(
     <Button>Click here</Button>
   );
 
-  expect(getByText('Click here')).toBeInTheDocument();
+  expect(screen.getByText('Click here')).toBeInTheDocument();
 });
 
 
 test('trigger event on click', () => {
   const handleClick = jest.fn();
 
-  const { getByRole } = render(<Button onClick={handleClick} />);
+  render(<Button onClick={handleClick} />);
 
-  fireEvent.click(getByRole('button'));
+  fireEvent.click(screen.getByRole('button'));
 
   expect(handleClick).toBeCalled();
 });
