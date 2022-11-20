@@ -1,0 +1,22 @@
+version: "2.1"
+orbs:
+  node: circleci/node@5.0.3
+  codecov: codecov/codecov@3.2.4
+jobs:
+  tests:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - checkout
+      - node/install:
+          node-version: "18.12.1"
+      - run: node --version
+      - node/install-packages
+      - run: npm run lint
+      - run: npm run cover
+      - codecov/upload:
+        file: coverage/*.json
+workflows:
+  ci:
+    jobs:
+      - tests
