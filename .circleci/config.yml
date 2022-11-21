@@ -29,8 +29,8 @@ workflows:
     jobs:
       - tests
       - versioning:
-        filters:
-          branches:
-            ignore: main
-          tags:
-            ignore: /.*/
+          filters:
+            branches:
+              ignore: main
+            tags:
+              ignore: /.*/
