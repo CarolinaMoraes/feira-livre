@@ -21,6 +21,8 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - checkout
+      - node/install:
+          node-version: "18.12.1"
       - run:
           name: "Check package version"
           command: node scripts/check-version CarolinaMoraes feira-livre
