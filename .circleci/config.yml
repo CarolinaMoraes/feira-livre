@@ -12,11 +12,17 @@ jobs:
           node-version: "18.12.1"
       - run: node --version
       - node/install-packages
-      - run: npm run lint
-      - run: npm run cover
+      - run: 
+          name: Run lint check
+          command: npm run lint
+      - run:
+          name:  Run unit tests with coverage
+          command: npm run cover
       - codecov/upload:
         file: coverage/*.json
-      - run: npm run chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
+      - run:
+          name: Publish to Chromatic
+          command: npm run chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
   versioning:
     docker:
       - image: "cimg/base:stable"
