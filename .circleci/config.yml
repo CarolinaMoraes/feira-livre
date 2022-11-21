@@ -16,7 +16,7 @@ jobs:
       - run: npm run cover
       - codecov/upload:
         file: coverage/*.json
-      - run: npm run chromatic --project-token=3512e656fa65
+      - run: npm run chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
   versioning:
     docker:
       - image: "cimg/base:stable"
