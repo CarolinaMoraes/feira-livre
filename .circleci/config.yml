@@ -16,7 +16,21 @@ jobs:
       - run: npm run cover
       - codecov/upload:
         file: coverage/*.json
+  versioning:
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      - checkout
+      - run:
+          name: "Check package version"
+          command: node scripts/check-version CarolinaMoraes feira-livre
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+        filters:
+          branches:
+            ignore: main
+          tags:
+            ignore: /.*/
