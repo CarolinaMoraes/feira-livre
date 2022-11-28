@@ -6,9 +6,17 @@ import Heading from "components/atoms/Heading";
 import Section from "components/molecules/Section";
 import Grid from "components/atoms/Grid";
 import Footer from "components/organisms/Footer";
+import Card, { CardMedia, CardMediaDescription } from "components/atoms/Card";
 
 import BgFruits from "stories/assets/hero-image.jpg";
 import AboutImage from "drawings/Cooking";
+
+import CreatorImage1 from "assets/creators/creator1.jpg";
+import CreatorImage2 from "assets/creators/creator2.jpg";
+import CreatorImage3 from "assets/creators/creator3.jpg";
+import CreatorImage4 from "assets/creators/creator4.jpg";
+import CreatorImage5 from "assets/creators/creator5.jpg";
+import CreatorImage6 from "assets/creators/creator6.jpg";
 
 const ImageContainer = styled.div`
   text-align: center;
@@ -20,6 +28,15 @@ const ImageContainer = styled.div`
     height: auto;
   }
 `;
+
+const creators = [
+  { id: 1, name: "Leonardo Gonçalves de Sá", avatar: CreatorImage1 },
+  { id: 2, name: "Fernando Marques", avatar: CreatorImage2 },
+  { id: 3, name: "Aline Ferreira dos Anjos", avatar: CreatorImage3 },
+  { id: 4, name: "Gabriela Nakagawa", avatar: CreatorImage4 },
+  { id: 5, name: "Gabriel Torres Deschamps", avatar: CreatorImage5 },
+  { id: 6, name: "Cecília Souza", avatar: CreatorImage6 },
+];
 
 const About = () => (
   <>
@@ -51,11 +68,11 @@ const About = () => (
     <Section inverse>
       <Grid md={2}>
         <div>
-          <h4>Missão</h4>
+          <h4>Como começamos</h4>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam placeat modi ullam illum, doloremque necessitatibus nisi consequuntur dolorum laudantium voluptatem blanditiis velit temporibus natus a officiis unde vitae minus perspiciatis.</p>
         </div>
         <div>
-          <h4>Visão</h4>
+          <h4>Onde queremos chegar</h4>
           <p>Quasi libero suscipit impedit aut vitae adipisci, voluptatum expedita voluptas magnam eveniet, dolore tempore neque. Animi, illo pariatur. Blanditiis, quod. Tempore excepturi eius iste, ducimus iure at vel impedit? Eos.</p>
         </div>
       </Grid>
@@ -64,6 +81,15 @@ const About = () => (
       <Heading>
         <h2>Conheça nossos idealizadores</h2>
       </Heading>
+      <Grid sm={2} md={3} lg={4}>
+        {creators.map(creator => (
+          <Card key={creator.id}>
+            <CardMedia image={creator.avatar}>
+              <CardMediaDescription><h5>{creator.name}</h5></CardMediaDescription>
+            </CardMedia>
+          </Card>
+        ))}
+      </Grid>
     </Section>
     <Footer></Footer>
   </>

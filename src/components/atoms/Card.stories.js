@@ -1,5 +1,5 @@
 import React from "react"
-import Card, { CardBody, CardMedia } from "components/atoms/Card";
+import Card, { CardBody, CardMedia, CardMediaDescription } from "components/atoms/Card";
 import Section from "components/molecules/Section";
 import Button from "components/atoms/Button";
 import Heading from "components/atoms/Heading";
@@ -40,6 +40,16 @@ export const withMedia = () => (
           <Button color="primary" variant="link">Saiba mais</Button>
         </div>
       </CardBody>
+    </Card>
+  </Section>
+);
+
+export const onlyMedia = () => (
+  <Section inverse>
+    <Card>
+      <CardMedia image={CardPlaceholderImage}>
+        <CardMediaDescription><h5>Descrição da imagem</h5></CardMediaDescription>
+      </CardMedia>
     </Card>
   </Section>
 );
