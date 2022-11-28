@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@svgr/cli": "^6.5.1",
     "add": "^2.0.6",
     "chromatic": "^6.11.2",
     "jest-styled-components": "^7.1.1",
@@ -30,7 +31,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --exit-zero-on-changes",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "svg": "svgr --icon --replace-attr-values \"#5bcc23=currentColor\" -d src/drawings/"
   },
   "eslintConfig": {
     "extends": [
