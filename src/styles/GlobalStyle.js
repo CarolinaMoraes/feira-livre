@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 const GlobalStyle = createGlobalStyle`
   
   html {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 100%;
     color: #212121;
@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
+  }
+
+  a,button {
+    font-family: "Poppins", sans-serif;
   }
 
   h1, h2, h3, h5, h6 {
