@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
+import ProductType from "types/ProductType";
+
 import { Link } from "react-router-dom";
 
 import Grid from "components/atoms/Grid";
@@ -31,7 +33,7 @@ const ProductGrid = ({ products }) => {
                 </Heading>
                 <p>{product.summary}</p>
                 <div>
-                  <Button color="primary" variant="link" as={Link} to="/servicos">Saiba mais</Button>
+                  <Button color="primary" variant="link" as={Link} to={`/servicos/${product.slang}`}>Saiba mais</Button>
                 </div>
               </CardBody>
             </Card>
@@ -52,12 +54,7 @@ ProductGrid.defaultProps = {
 
 ProductGrid.propTypes = {
   products: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-      image: PropTypes.string,
-      title: PropTypes.string,
-      summary: PropTypes.string
-    })
+    ProductType
   )
 };
 

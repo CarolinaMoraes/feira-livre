@@ -12,6 +12,7 @@ import BgFruits from "stories/assets/hero-image.jpg";
 import SvgPlanting from "drawings/Planting";
 import { FaIdCard, FaIdBadge, FaHome, FaScroll } from "react-icons/fa";
 import styled from "styled-components";
+import ProductType from "types/ProductType";
 
 const PinnedList = styled.ul`
   list-style: none;
@@ -30,15 +31,15 @@ const PinnedItem = styled.li`
   }
 `;
 
-const ProductDetail = () => {
+const ProductDetail = ({ product }) => {
 
   return (
     <>
       <Hero image={BgFruits}>
         <Heading>
-          <h1 data-testid="productDetailTitle">Nome do serviço</h1>
+          <h1 data-testid="productDetailTitle">{product.title}</h1>
         </Heading>
-        <Breadcrumb items={[{ label: "Início", link: "/" }, { label: "Serviços" }, { label: "Nome do serviço" }]} />
+        <Breadcrumb items={[{ label: "Início", link: "/" }, { label: "Serviços" }, { label: product.title }]} />
       </Hero>
       <Section>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eum vero magnam quis ipsam labore modi, eaque accusamus perferendis aperiam, magni nemo porro obcaecati illum laboriosam eius, recusandae omnis maiores.</p>
@@ -83,5 +84,9 @@ const ProductDetail = () => {
     </>
   );
 }
+
+ProductDetail.defaultProps = { products: {} };
+
+ProductDetail.propTypes = { product: ProductType };
 
 export default ProductDetail;
