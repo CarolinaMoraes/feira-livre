@@ -1,6 +1,4 @@
-import React from "react"
-
-import { useScrollToTop } from "hooks/scroll";
+import React from "react";
 
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
@@ -32,9 +30,7 @@ const PinnedItem = styled.li`
   }
 `;
 
-const ProductDetail = (props) => {
-
-  useScrollToTop();
+const ProductDetail = () => {
 
   return (
     <>
@@ -87,9 +83,5 @@ const ProductDetail = (props) => {
     </>
   );
 }
-
-ProductDetail.defaultProps = {};
-
-ProductDetail.propTypes = {};
 
 export default ProductDetail;
