@@ -13,6 +13,7 @@ import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
 import Accordion, { AccordionGroup } from "components/atoms/Accordion";
+import { Link } from "react-router-dom";
 
 import CozinhaSolidariaImage from "assets/cozinha-solidaria.jpg";
 import ArmazemDoCampoImage from "assets/armazem-campo.jpeg";
@@ -71,11 +72,11 @@ const Home = () => (
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, nulla? Adipisci voluptates veniam officiis earum tempore repudiandae aliquid est eligendi,
             quibusdam, doloremque nobis dolore eveniet, magni numquam iure laboriosam voluptatibus.</p>
           <div>
-            <Button color="primary">Saiba mais</Button>
+            <Button as={Link} to="/sobre" color="primary">Saiba mais</Button>
           </div>
         </div>
         <div>
-          <video src={AboutVideo} width="100%" height="100%" autoPlay loop muted />
+          <video src={AboutVideo} width="100%" height="100%" autoPlay playsInline loop muted />
         </div>
       </Grid>
     </Section>
