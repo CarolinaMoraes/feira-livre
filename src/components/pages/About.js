@@ -48,7 +48,7 @@ const About = () => {
   return (
     <>
       <Hero image={BgFruits}>
-        <Heading><h1>Feira Livre</h1></Heading>
+        <Heading><h1 data-testid="aboutPageTitle">Feira Livre</h1></Heading>
         <Breadcrumb items={[{ label: "Início", link: "/" }, { label: "Sobre", link: "" }]} />
       </Hero>
       <Section>

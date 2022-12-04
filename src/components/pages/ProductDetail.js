@@ -40,7 +40,7 @@ const ProductDetail = (props) => {
     <>
       <Hero image={BgFruits}>
         <Heading>
-          <h1>Nome do serviço</h1>
+          <h1 data-testid="productDetailTitle">Nome do serviço</h1>
         </Heading>
         <Breadcrumb items={[{ label: "Início", link: "/" }, { label: "Serviços" }, { label: "Nome do serviço" }]} />
       </Hero>

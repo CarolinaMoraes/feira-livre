@@ -13,7 +13,7 @@ const Item = styled.span`
   font-weight: 300;
   text-decoration: none;
 
-  ${props => props.isClickable && css`
+  ${props => props.to && css`
     cursor: pointer;
     color: #fff;
 
@@ -34,7 +34,7 @@ const Item = styled.span`
 const Breadcrumb = ({ items }) => (
   <Root>
     {items.map(item => (
-      <Item as={item.link && Link} to={item.link} key={item.link} isClickable={!!item.link}>
+      <Item as={item.link && Link} to={item.link} key={item.link}>
         {item.label}
       </Item>))}
   </Root>
