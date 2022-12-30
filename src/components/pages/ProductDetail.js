@@ -12,7 +12,7 @@ import BgFruits from "stories/assets/hero-image.jpg";
 import SvgPlanting from "drawings/Planting";
 import { FaIdCard, FaIdBadge, FaHome, FaScroll } from "react-icons/fa";
 import styled from "styled-components";
-import ProductType from "types/ProductType";
+import ProductType from "models/types/ProductType";
 
 const PinnedList = styled.ul`
   list-style: none;

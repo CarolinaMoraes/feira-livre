@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types";
-import ProductType from "types/ProductType";
+import ProductType from "models/types/ProductType";
 
 import Button from "components/atoms/Button";
 import Feature from "components/atoms/Feature";

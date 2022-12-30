@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import ProductType from "types/ProductType";
+import ProductType from "models/types/ProductType";
 
 import { Link } from "react-router-dom";
 
