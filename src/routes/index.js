@@ -13,6 +13,6 @@ const AppRoutes = () => (
     <Route path="/servicos/:slang" element={<ProductDetail />} />
     <Route path="*" element={<Error404 />} />
   </Routes>
-)
+);
 
 export default AppRoutes;
