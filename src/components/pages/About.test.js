@@ -12,8 +12,3 @@ test('it renders', () => {
   const h1 = screen.getByTestId("aboutPageTitle");
   expect(h1.textContent).toBe("Feira Livre");
 });
-
-test('scrolls to top in first render', () => {
-  render(<About />);
-  expect(window.scrollTo).toBeCalledTimes(1);
-})

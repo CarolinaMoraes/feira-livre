@@ -33,8 +33,8 @@ const Item = styled.span`
 
 const Breadcrumb = ({ items }) => (
   <Root>
-    {items.map(item => (
-      <Item as={item.link && Link} to={item.link} key={item.link}>
+    {items.map((item, index) => (
+      <Item as={item.link && Link} to={item.link} key={index}>
         {item.label}
       </Item>))}
   </Root>

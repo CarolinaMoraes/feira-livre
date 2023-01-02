@@ -1,10 +1,7 @@
 import ThemeProvider from "styles/ThemeProvider";
 import GlobalStyle from "styles/GlobalStyle";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Home from "components/pages/Home";
-import About from "components/pages/About";
-import ProductDetail from "components/pages/ProductDetail";
+import Routes from "routes";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
@@ -12,11 +9,7 @@ function App() {
     <ThemeProvider>
       <GlobalStyle />
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre" element={<About />} />
-          <Route path="/servicos" element={<ProductDetail />} />
-        </Routes>
+        <Routes />
       </Router>
     </ThemeProvider>
   );

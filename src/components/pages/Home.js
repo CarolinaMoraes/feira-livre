@@ -1,4 +1,6 @@
 import React from "react"
+import PropTypes from "prop-types";
+import ProductType from "models/types/ProductType";
 
 import Button from "components/atoms/Button";
 import Feature from "components/atoms/Feature";
@@ -15,23 +17,7 @@ import ProductGrid from "components/organisms/ProductGrid";
 import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 import { Link } from "react-router-dom";
 
-import CozinhaSolidariaImage from "assets/cozinha-solidaria.jpg";
-import ArmazemDoCampoImage from "assets/armazem-campo.jpeg";
-import CooperativaImage from "assets/cooperativa.jpg";
-import ProdutorImage from "assets/produtor.jpg";
-import EducacaoImage from "assets/escola.jpg";
-import AssentamentoImage from "assets/assentamento.jpg";
-
-const products = [
-  { id: 1, title: "Cozinha solidária", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: CozinhaSolidariaImage },
-  { id: 2, title: "Armazém do Campo", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: ArmazemDoCampoImage },
-  { id: 3, title: "Cooperativas", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: CooperativaImage },
-  { id: 4, title: "Apoio ao pequeno produtor", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: ProdutorImage },
-  { id: 5, title: "Educação no campo", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: EducacaoImage },
-  { id: 6, title: "Assentamentos", summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit", image: AssentamentoImage }
-];
-
-const Home = () => (
+const Home = ({ products }) => (
   <>
     <Hero image={BgSeller} >
 
@@ -106,5 +92,13 @@ const Home = () => (
     <Footer />
   </>
 );
+
+Home.defaultProps = {
+  products: []
+};
+
+Home.propTypes = {
+  products: PropTypes.arrayOf(ProductType)
+};
 
 export default Home;

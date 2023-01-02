@@ -1,6 +1,6 @@
 {
   "name": "feira-livre",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@storybook/addon-docs": "^6.5.13",
@@ -34,7 +34,8 @@
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --exit-zero-on-changes",
     "lint": "eslint src/**/*.js",
-    "svg": "svgr --icon --replace-attr-values \"#5bcc23=currentColor\" -d src/drawings/"
+    "svg": "svgr --icon --replace-attr-values \"#5bcc23=currentColor\" -d src/drawings/",
+    "create-fixtures": "node scripts/create-fixture.js"
   },
   "eslintConfig": {
     "extends": [
@@ -74,6 +75,7 @@
     ]
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@storybook/addon-actions": "^6.5.13",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-interactions": "^6.5.13",

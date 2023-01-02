@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components";
 
-import { useScrollToTop } from "hooks/scroll";
-
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
 import Section from "components/molecules/Section";
@@ -42,9 +40,6 @@ const creators = [
 ];
 
 const About = () => {
-
-  useScrollToTop();
-
   return (
     <>
       <Hero image={BgFruits}>
@@ -103,9 +98,5 @@ const About = () => {
     </>
   )
 };
-
-About.defaultProps = {};
-
-About.propTypes = {};
 
 export default About;
